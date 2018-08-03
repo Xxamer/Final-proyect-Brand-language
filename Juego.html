@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Metal Gear Solid</title>
+  <link rel="icon" type="imagen/png" href="images/FOX.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/ESTILO1.CSS">
+  <script src="js/juego.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD1A-ZhhuZzomiThFksKT21-J6DgjTqOk4",
+    authDomain: "mi-proyecto-1-e6ccf.firebaseapp.com",
+    databaseURL: "https://mi-proyecto-1-e6ccf.firebaseio.com",
+    projectId: "mi-proyecto-1-e6ccf",
+    storageBucket: "mi-proyecto-1-e6ccf.appspot.com",
+    messagingSenderId: "391077376116"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+
+</head>
+<body id="cuerpo">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Metal Gear Solid</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li ><a href="inspiraciones.html">Inspiraciones de la saga</a></li>
+          <li><a  href="Creador.html">Creador de la Saga</a></li>
+          <li><a href="Juego.html">A Hideo Kojima Game</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Títulos de la saga <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Saga.html">La saga Metal Gear Solid</a></li>
+            </ul>
+          </li>
+          <li><a href="TablaFrases.html"> Frases de videojuegos </a></li>
+          <li><a href="galeria.html"> Galeria de imagenes </a></li>
+          <li class="hide" id="administrador"><a href="Admi.html"> Página de administración de resultados</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+
+    <div class="container blancoSC">
+
+      <h1>¿Qué sabes de Metal Gear Solid?  <button type="button" class="btn btn-warning btn-md" id="CambiarFondo">Cambiar fondo de la pagina</button></h1>
+      <hr>
+      <form class="form-inline" id = "quiz" name = "quiz">
+        <label id="Pregunta1" class = "questions">¿Cual es el nombre clave del protagonista de Metal Gear Solid?</label> <br/>
+        <input  id = "textbox" type = "text" name = "Pregunta1"> <br/>
+        <div id = "campo_vacio">
+          <h3 id = "obligatorio"></h3>
+        </div>
+        <hr>
+        <label id="Pregunta2" class = "questions">En que videojuego el nombre clave del protagonista es "Naked Snake"?</label> <br/>
+        <input type = "radio"  name = "Pregunta2" value = "Metal Gear Solid 1"> Metal Gear Solid 1<br>
+        <input type = "radio"  name = "Pregunta2" value = "Metal Gear Solid 2"> Metal Gear Solid 2<br>
+        <input type = "radio"  name = "Pregunta2" value = " Metal Gear Solid 3 ">  Metal Gear Solid 3 <br/>
+        <input type = "radio"  name = "Pregunta2" value = "Metal Gear Solid 4"> Metal Gear Solid 4<br>
+        <div id = "campo_vacio1">
+          <h3 id = "obligatorio1"></h3>
+        </div>
+        <hr/>
+        <br/>
+        <label id="Pregunta3" class = "questions">¿Cómo se llama el creador de Metal Gear Solid?</label> <br/>
+
+        <input type = "radio"  name = "Pregunta3" value = "James Cantina"> Jaime Cantizano<br/>
+        <input type = "radio"  name = "Pregunta3" value = "Ojalá_una_sopita"> Fideo Sopita<br/>
+        <input type = "radio"  name = "Pregunta3" value = "Hideo_Kojima"> Hideo Kojima<br/>
+        <input type = "radio"  name = "Pregunta3" value = "Te_Echamos_De_Menos_Chiquito"> Vracula Condemor
+        <div id = "campo_vacio2">
+          <h3 id = "obligatorio2"></h3>
+        </div>
+        <hr/>
+
+
+        <br/>
+
+
+        <label id="Pregunta4" class = "questions">¿Quienes son los villanos principales ocultos en la Saga Metal Gear Solid?</label>
+        <select class="color" name="Pregunta4">
+          <option class="color" value="">-------</option>
+          <option class="color" value="Falso">Konami</option>
+          <option class="color" value="Correcto">Los Patriots</option>
+          <option class="color" value="Falso">España</option>
+          <option class="color" value="Falso">Yo</option>
+          <option class="color" value="Falso">El Twitter de Hideo Kojima</option>
+        </select> <br/>
+        <div id = "campo_vacio3">
+          <h3 id = "obligatorio3"></h3>
+        </div>
+        <hr/>
+        <label id="Pregunta5" class = "questions">¿En cual de estos juegos NO ha participado Hideo Kojima?</label>
+        <select class="color" name="Pregunta5">
+          <option class="color" value="">-------</option>
+          <option class="color" value="Falso">Boktai</option>
+          <option class="color" value="Falso">Zone Of The Enders</option>
+          <option class="color" value="Falso">Metal Gear Solid</option>
+          <option class="color" value="Correcto">Shower with your dad simulator</option>
+          <option class="color" value="Falso">Policenauts</option>
+        </select> <br/>
+        <div id = "campo_vacio4">
+          <h3 id = "obligatorio4"></h3>
+        </div>
+        <hr/>
+        <label id="Pregunta6" class = "questions">¿Cuántos juegos principales hay en la saga Metal Gear Solid?</label> <br/>
+        <div class="checkbox">
+          <label><input  type="checkbox" value="Falso">30</label>
+        </div>
+        <div class="checkbox">
+          <label><input  type="checkbox" value="Falso">5</label>
+        </div>
+        <div class="checkbox">
+          <label><input name = "Pregunta6" type="checkbox" value="correcta">7</label>
+        </div>
+
+        <hr/>
+
+        <input id ="button" type = "submit" value = "He terminado, ¡DIME SI HE GANADO ALGO!">
+        <button id="BorrarFormulario" class="btn btn-danger" type="reset">¡BORRA ESO!</button>
+
+      </form>
+
+      <div id = "after_submit">
+        <h2 id = "Numero_Correcto"></h2>
+        <h2 id = "Numero_Fallado"></h2>
+        <p id = "Mensaje"></p>
+        <img src="images/Juego/transparente.png" class="img-responsive" alt="quiz" id = "picture">
+        <br/>
+        <div class="table-responsive">
+          <div class="row">
+            <div class="col-sm-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th colspan="4">Respuestas del resto de usuarios</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <th>Pregunta 1</th>
+                    <th>Pregunta 2</th>
+                    <th>Pregunta 3</th>
+                    <th>Pregunta 4</th>
+                    <th>Pregunta 5</th>
+                    <th>Pregunta 6</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-juego">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+
+</body>
+</html>

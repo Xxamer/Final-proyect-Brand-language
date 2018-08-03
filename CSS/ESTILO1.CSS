@@ -1,0 +1,108 @@
+#cuerpo {
+ background-image: url("../images/Background.jpg") ;
+ background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% top;
+  background-attachment: fixed;
+
+}
+
+
+
+#picture{
+
+box-shadow: 5px 5px 3px purple ;
+
+}
+
+hr {
+  color: white;
+  background-color: inherit;
+}
+
+#rojo  {
+  background-color: inherit;
+color: red;
+text-align : center;
+}
+ #myScrollspy {
+   position: fixed;
+   display: block;
+ }
+
+.blancoNC  {
+  background-color: transparent;
+color : white;
+
+}
+.CuerpoSaga {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+#imagenJerar { width: 600px; height: 600px; }
+
+.blanco  {
+background-color: inherit;
+color : white;
+text-align : center;
+}
+
+.blancoSC  {
+background-color: inherit;
+color : white;
+margin-left: 10px;
+}
+.centro {
+  margin:10px auto;
+	display:block;
+}
+table, th, td {
+    border: 1px solid white;
+  }
+.tamanio {
+  width: 390px;
+}
+
+.grande {
+  width: 500px;
+  height: 500px;
+
+}
+.peque {
+  width: 220px;
+}
+p {
+  text-align: justify;
+}
+.Header {
+  color: white;
+  background-color:transparent;
+}
+.derechaCont {
+  display: block;
+float: right;
+  width: 55%;
+  margin: 20px;
+}
+
+.derecha1 {
+  display: block;
+float: right;
+  width: 30%;
+  margin: 20px;
+}
+/* Esto es el formulario */
+#textbox {
+background-color:white;
+color:black;
+font-size:10pt; }
+
+#button {
+background-color:white;
+color:black;
+font-size:10pt; }
+.color {
+background-color:white;
+color:black;
+font-size:10pt; }

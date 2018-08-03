@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Administración de resultados</title>
+  <link rel="icon" type="imagen/png" href="images/FOX.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/ESTILO1.CSS">
+  <script src="js/CrudAdmi.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD1A-ZhhuZzomiThFksKT21-J6DgjTqOk4",
+    authDomain: "mi-proyecto-1-e6ccf.firebaseapp.com",
+    databaseURL: "https://mi-proyecto-1-e6ccf.firebaseio.com",
+    projectId: "mi-proyecto-1-e6ccf",
+    storageBucket: "mi-proyecto-1-e6ccf.appspot.com",
+    messagingSenderId: "391077376116"
+  };
+  firebase.initializeApp(config);
+  </script>
+</head>
+<body id="cuerpo">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Metal Gear Solid</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li ><a href="inspiraciones.html">Inspiraciones de la saga</a></li>
+          <li><a  href="Creador.html">Creador de la Saga</a></li>
+          <li><a href="Juego.html">A Hideo Kojima Game</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Títulos de la saga <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Saga.html">La saga Metal Gear Solid</a></li>
+            </ul>
+          </li>
+          <li><a href="TablaFrases.html"> Frases de videojuegos </a></li>
+          <li><a href="galeria.html"> Galería de imagenes </a></li>
+          <li class="hide" id="administrador"><a href="Admi.html"> Página de administración de resultados</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="container blancoSC">
+    <div class="row">
+      <div class="col-sm-4">
+        <form id ="formjuegos">
+          <div class="form-group">
+            <label for="Pregunta1-tabla" > Pregunta 1:</label>
+            <input type="text" class="form-control" name="Pregunta1" value="" id="Pregunta1-tabla">
+          </div>
+
+          <div class="form-group">
+            <label for="Pregunta2-tabla" > Pregunta 2:</label>
+            <input type="text" class="form-control" name="Pregunta2" value="" id="Pregunta2-tabla">
+          </div>
+          <div class="form-group">
+            <label for="Pregunta3-tabla" >Pregunta 3: </label>
+            <input type="text" class="form-control" name="Pregunta3" value="" id="Pregunta3-tabla">
+          </div>
+          <div class="form-group">
+            <label for="Pregunta4-tabla" >Pregunta 4:</label>
+            <input type="text" class="form-control" name="Pregunta4" value="" id="Pregunta4-tabla">
+          </div>
+          <div class="form-group">
+            <label for="Pregunta5-tabla" >Pregunta 5:</label>
+            <input type="text" class="form-control" name="Pregunta5" value="" id="Pregunta5-tabla">
+          </div>
+          <div class="form-group">
+            <label for="Pregunta6-tabla" >Pregunta 6:</label>
+            <input type="text" class="form-control" name="Pregunta6" value="" id="Pregunta6-tabla">
+          </div>
+          <input type="submit" class="btn-warning"  value="Añadir linea de preguntas" id="boton-enviar-frase">
+        </form>
+
+      </div>
+      <div class="col-sm-1">
+
+      </div>
+      <div class="col-sm-8">
+  <br/>
+  <br/>
+  <br/>
+  <div class="table-responsive">
+
+
+        <table>
+          <thead>
+          <tr>
+            <th colspan="8">Frases populares de los videojuegos</th>
+
+          </tr>
+          <tr>
+            <th>Pregunta 1 :</th>
+            <th>Pregunta 2 :</th>
+            <th>Pregunta 3 :</th>
+            <th>Pregunta 4: </th>
+            <th>Pregunta 5: </th>
+            <th>Pregunta 6: </th>
+            <th>Editar</th>
+            <th>Borrar</th>
+          </tr>
+          </thead>
+          <tbody id="tbodyjuego">
+
+          </tbody>
+        </table>
+  </div>
+      </div>
+
+    </div>
+  </div>
+    </div>
+</body>
+</html>

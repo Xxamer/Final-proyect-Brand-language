@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tabla de datos</title>
+  <link rel="icon" type="imagen/png" href="images/FOX.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/ESTILO1.CSS">
+  <script src="js/CRUD.js">
+
+  </script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD1A-ZhhuZzomiThFksKT21-J6DgjTqOk4",
+    authDomain: "mi-proyecto-1-e6ccf.firebaseapp.com",
+    databaseURL: "https://mi-proyecto-1-e6ccf.firebaseio.com",
+    projectId: "mi-proyecto-1-e6ccf",
+    storageBucket: "mi-proyecto-1-e6ccf.appspot.com",
+    messagingSenderId: "391077376116"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<body id="cuerpo">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Metal Gear Solid</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li ><a href="inspiraciones.html">Inspiraciones de la saga</a></li>
+          <li><a  href="Creador.html">Creador de la Saga</a></li>
+          <li><a href="Juego.html">A Hideo Kojima Game</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Títulos de la saga <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Saga.html">La saga Metal Gear Solid</a></li>
+            </ul>
+          </li>
+          <li><a href="TablaFrases.html"> Frases de videojuegos </a></li>
+          <li><a href="galeria.html"> Galeria de imagenes </a></li>
+          <li class="hide" id="administrador"><a href="Admi.html"> Página de administración de resultados</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+  <div class="container blancoSC">
+
+
+  <div class="row">
+    <div class="col-sm-4">
+      <form id ="form-juegos">
+        <div class="form-group">
+          <label for="NombreUsuario-tabla" > Nombre de Usuario</label>
+          <input type="text" class="form-control" name="NombreDeUsuario" value="" id="NombreUsuario-tabla">
+        </div>
+
+        <div class="form-group">
+          <label for="Personaje-tabla" > Nombre del personaje</label>
+          <input type="text" class="form-control" name="Personaje" value="" id="Personaje-tabla">
+        </div>
+        <div class="form-group">
+          <label for="Frase-tabla" >Frase del personaje </label>
+          <input type="text" class="form-control" name="Frase" value="" id="Frase-tabla">
+        </div>
+        <div class="form-group">
+          <label for="Juego-tabla" >Juego en el que aparece</label>
+          <input type="text" class="form-control" name="Juego" value="" id="Juego-tabla">
+        </div>
+        <input type="submit" class="btn-warning"  value="Insertar frase" id="boton-enviar-frase">
+      </form>
+
+    </div>
+    <div class="col-sm-1">
+
+    </div>
+    <div class="col-sm-7">
+<img id="rss" src="images/RSS.jpg" alt="rss">
+<br/>
+<br/>
+<br/>
+  <div class="table-responsive">
+
+      <table class="table">
+        <thead>
+        <tr>
+          <th colspan="6">Frases populares de los videojuegos</th>
+
+        </tr>
+        <tr>
+          <th>Usuario:</th>
+          <th>Personaje:</th>
+          <th>Frase:</th>
+          <th>Juego:</th>
+          <th>Editar</th>
+          <th>Borrar</th>
+        </tr>
+        </thead>
+        <tbody id="tbody-juego">
+
+        </tbody>
+      </table>
+</div>
+    </div>
+</div>
+  </div>
+</div>
+</body>
+</html>

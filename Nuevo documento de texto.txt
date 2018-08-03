@@ -1,0 +1,6 @@
+En la pestaña "Galeria de imagenes" hay un login, con el usuario "UsuarioNormie@gmail.com" y "Contraseña1234" aparecerá el botón para poder subir imagenes a dicha galería.
+
+Con el usuario "admin@admin.com" y la contraseña "admin1234" aparte de activarse el botón para subir imagenes, tambien aparecerá una nueva pagina en la navbar que se llama "Página de administración de resultados" que no aparece con otros usuarios que servirá
+para cambiar los resultados de los usuarios que se muestran en la página de "A Hideo Kojima Game", relacionando las dos tablas con un mantenimiento completo. 
+
+Y en la pagína de "Frases de videojuegos" está el botón del RSS que muestra las entradas que se añadan en la tabla desde abajo (Ahora si se muestra en una ventana nueva aparte de en consola).

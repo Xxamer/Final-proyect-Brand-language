@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Metal Gear Solid</title>
+  <link rel="icon" type="imagen/png" href="images/FOX.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/ESTILO1.CSS">
+<script src="js/general.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD1A-ZhhuZzomiThFksKT21-J6DgjTqOk4",
+    authDomain: "mi-proyecto-1-e6ccf.firebaseapp.com",
+    databaseURL: "https://mi-proyecto-1-e6ccf.firebaseio.com",
+    projectId: "mi-proyecto-1-e6ccf",
+    storageBucket: "mi-proyecto-1-e6ccf.appspot.com",
+    messagingSenderId: "391077376116"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body id="cuerpo">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Metal Gear Solid</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li ><a href="inspiraciones.html">Inspiraciones de la saga</a></li>
+          <li><a  href="Creador.html">Creador de la Saga</a></li>
+          <li><a href="Juego.html">A Hideo Kojima Game</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Títulos de la saga <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Saga.html">La saga Metal Gear Solid</a></li>
+            </ul>
+          </li>
+          <li><a href="TablaFrases.html"> Frases de videojuegos </a></li>
+          <li><a href="galeria.html"> Galeria de imagenes </a></li>
+          <li class="hide" id="administrador"><a href="Admi.html"> Página de administración de resultados</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+  <ul class="nav nav-tabs">
+    <li><a class="blanco" href="index.html">Home</a></li>
+    <li class="active blanco"><a href="Personajes.html">Personajes de la saga</a></li>
+  </ul>
+
+  <div class="blancoSC">
+    <h2>Protagonistas de la saga principal </h2>
+    <hr>
+  </div>
+  <div class="blancoSC">
+    <div class="table-responsive">
+      <table class="table">
+        <tr>
+
+          <th>Nombre del personaje</th>
+          <th>Descripción</th>
+          <th>Apariciones en videojuegos</th>
+        </tr>
+        <tr>
+          <td>Solid Snake <img class="img-responsive tamanio" src="images/SolidSnake.png" alt="Solid Snake"></td>
+          <td>Solid Snake: uno de los productos del proyecto secreto Les Enfants Terribles,<br/>
+            llevado a cabo por el gobierno de los Estados Unidos, con la finalidad de hacer<br/>
+            prevalecer los genes del más grande soldado del siglo XX;<br/>
+            es conocido por ser el hombre capaz de hacer que lo imposible se vuelva posible.<br/>
+            Sus logros hicieron que se le considere una leyenda viviente en el entorno militar.</td>
+            <td>
+              <ul>
+                <li>Metal Gear, Metal Gear 2: Solid Snake</li>
+                <li>Metal Gear Solid</li>
+                <li>Metal Gear Solid 4: Guns Of The Patriots</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Naked Snake/Big Boss <img class="img-responsive tamanio" src="images/BigBoss.jpg" alt="Big Boss"></td>
+            <td>Además de ser aclamado por sus admiradores como un héroe de guerra, es considerado <br/>
+              por muchos como el más grande soldado del siglo XX y un brillante líder militar. <br/>
+              Fundó FOXHOUND, Militaires Sans Frontières, Diamond Dogs, Outer Heaven y Zanzibar Land. <br/>
+              Los hechos que acontecieron y de los que a su vez formó parte durante una de sus misiones, harán<br/>
+              que se cuestione muchas de las cosas en las que cree y más adelante determinarán su mentalidad y acciones posteriores</td>
+              <td>
+                <ul>
+                  <li>Metal Gear Solid 3:Snake Eater</li>
+                  <li>Metal Gear Solid: Ground Zeroes</li>
+                  <li>Metal Gear Solid V: The Phantom Pain</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Raiden <img class="img-responsive tamanio" src="images/Raiden.jpg" alt="Raiden"> </td>
+              <td>A pesar de su carencia de experiencia militar en campo, es enviado a una misión (durante la cual se develarán <br/>
+                muchas cosas de su pasado que él mismo no recordaba) para detener a un grupo terrorista que amenaza la seguridad <br/>
+                de los EE.UU. Él deberá entonces hacer su mejor esfuerzo para evitar que los terroristas cumplan sus objetivos. <br/>
+                Salva la vida de Solid Snake en varias ocasiones. Años más tarde, su cuerpo es destruido en una batalla, y <br/>
+                reemplazado por un cuerpo cyborg, similar al de Gray Fox.</td>
+                <td>
+                  <ul>
+                    <li>Metal Gear Solid 2: Sons Of Liberty</li>
+                    <li>Metal Gear Solid 4: Guns Of The patriots</li>
+                    <li>Metal Gear Rising: Revengeance</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="blancoSC">
+            <h2>Antagonistas principales </h2>
+            <p> Metal Gear Solid tiene un muy variado plantel de enemigos y jefes, he recopilado los de mayor importancia </p>
+            <hr>
+          </div>
+          <div class="blancoSC">
+            <div class="table-responsive">
+              <table class="table">
+                <tr>
+
+                  <th>Nombre del personaje</th>
+                  <th>Descripción</th>
+                  <th>Juegos en los que aparece</th>
+                </tr>
+                <tr>
+                  <td>Liquid Snake<img class="img-responsive tamanio" src="images/LiquidTTS.jpg" alt="Solid Snake"></td>
+                  <td>Liquid Snake (1972-2005), de nombre real Eli, y también conocido como Nyoka ya Mpembe, Mamba Blanca, Master Miller <br/>
+                    y más comúnmente como Liquid fue uno de Les Enfants Terribles,
+                     clon de Big Boss y hermano de Solid Snake y Solidus Snake. <br/>
+                      Fue el primer hijo de Big Boss junto a su gemelo Solid,<br/>
+                      además de ser el recipiente de los genes dominantes de su padre..
+                    </td>
+                    <td>
+                      <ul>
+                        <li>Metal Gear Solid</li>
+                        <li>Metal Gear Solid 4: Guns Of The Patriots</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Solidus Snake <img class="img-responsive tamanio" src="images/MGS2-Solidus-Snake.jpg" alt="Big Boss"></td>
+                    <td>Solidus Snake (1972-2009), de nombre real George Sears, y también conocido como King, o simplemente Solidus, <br/>
+                       era uno de los tres “hijos de Big Boss”, creados como parte del proyecto "Les Enfants Terribles". En el proyecto, <br/>
+                       uno de los hijos llevaría los genes "dominantes" de Big Boss (Solid Snake), y el otro llevaría los genes "recesivos" <br/>
+                       (Liquid Snake), y el tercero sería un equilibrio perfecto entre los genes dominantes y recesivos (Solidus). <br/>
+                       "Solidus” significa “ni sólido ni líquido” que viene definido porque Solidus era el equilibrio perfecto de sus dos hermanos.</td>
+                      <td>
+                        <ul>
+                          <li>Metal Gear Solid 3:Snake Eater</li>
+                          <li>Metal Gear Solid: Ground Zeroes</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>The Boss <img class="img-responsive tamanio" src="images/MGS3TBoss.png" alt="Raiden"> </td>
+                      <td>The Boss (1922 - 1964), anteriormente conocida como The Joy, y también conocida como Voyevoda, Madre de las Fuerzas Especiales <br/>
+                         Lóbulo Izquierdo, y Mercury Lady fue la fundadora y líder de la Unidad Cobra, una heroína de la Segunda Guerra Mundial, cocreadora del CQC  <br/>
+                          la primera humana y mujer en el espacio, cofundadora de la Unidad FOX, y mentora del mejor soldado del siglo XX, Big Boss.<br/>
+                          Una soldado legendaria, y considerada por muchos de sus compatriotas como la madre de las fuerzas especiales norteamericanas. <br/>
+                           Sus ideales de un mundo sin fronteras ni conflictos influenciaron a muchas personas.
+                         A pesar de que aparece muy poco tiempo de forma física <br/> los ideales y la muerte de The Boss desencadenarían, directa o indirectamente <br/>
+                          todos los hechos futuros de la saga Metal Gear (desde Metal Gear Solid: Portable Ops, en 1970, hasta Metal Gear Rising: Revengeance, en 2018).</td>
+                        <td>
+                          <ul>
+                            <li>Metal Gear Solid 3: Snake Eater</li>
+                            <li>Metal Gear Solid V: The Phantom Pain (Solo voz) </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Los Patriots <img class="img-responsive tamanio" src="images/Halved_patriot.jpg" alt="Raiden"> </td>
+                        <td>Cipher, posteriormente conocida como Los Patriots, y apodados como La Li Lu Le Lo, fue una organización secreta cuyo único propósito era crear un mundo <br/>
+                           unido y sin fronteras, como The Boss quería, y posteriormente trató de controlar el mundo mediante Inteligencias Artificiales. Fueron los herederos directos <br/>
+                            de los Filósofos, que incluía miembros de China, la Unión Soviética y Estados Unidos.La sede de Los Filósofos en Estados Unidos fue renombrada a Cipher en 1970, <br/>
+                             cuando Zero reclutó a Ocelot, Big Boss, Para-Medic, Sigint y más tarde a EVA.</td>
+                          <td>
+                            <ul>
+                              <li>Están presentes en toda la saga.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+                </div>
+                </div>
+            </body>
+            </html>
